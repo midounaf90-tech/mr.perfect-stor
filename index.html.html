@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -227,14 +228,12 @@
   .card-body p{
     font-size:.85rem;
     color:#6b7280;
-    flex:1;
   }
 
   .price-row{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-top:auto;
   }
 
   .price{
@@ -749,7 +748,7 @@
           </div>
           <div class="card-body">
             <h3>${p.name}</h3>
-            <p>${p.description || ''}</p>
+            <p>${(p.description || '').replace(/[\r\n]+/g, ' ').trim()}</p>
             <div class="price-row">
               <span class="price">${p.price}</span>
               <button class="order-btn" onclick="openModal(${idx})">اطلب الآن</button>
