@@ -996,6 +996,13 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     document.getElementById('submit-btn').disabled = true;
 
     document.getElementById('overlay').classList.add('active');
+
+    // Meta Pixel — InitiateCheckout
+    fbq('track', 'InitiateCheckout', {
+      content_name: currentProduct.name,
+      value: parseFloat(currentProduct.price) || 0,
+      currency: 'DZD'
+    });
   }
 
   function closeModal(){
@@ -1143,6 +1150,12 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       });
 
       if(res.ok){
+        // Meta Pixel — Purchase
+        fbq('track', 'Purchase', {
+          content_name: currentProduct.name,
+          value: total,
+          currency: 'DZD'
+        });
         closeModal();
         showSuccessOverlay();
       }else{
