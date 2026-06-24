@@ -1,30 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Needs | المتجر</title>
-
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1273766987939925');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
-/></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
-  :root{\n    --navy:#10243E;
+  :root{
+    --navy:#10243E;
     --navy-2:#16314F;
     --steel:#3C5A78;
     --yellow:#FFC93C;
@@ -735,6 +721,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
   <div class="empty-state">جاري تحميل المنتجات...</div>
 </div>
 
+<!-- Order Modal -->
 <div class="overlay" id="overlay">
   <div class="modal">
     <button class="close-x" onclick="closeModal()">✕</button>
@@ -789,6 +776,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
   </div>
 </div>
 
+<!-- Success Overlay -->
 <div class="overlay" id="success-overlay">
   <div class="modal success-modal">
     <div class="success-icon">✓</div>
@@ -797,6 +785,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
   </div>
 </div>
 
+<!-- Info Modal -->
 <div class="overlay" id="info-overlay">
   <div class="modal info-modal">
     <div class="info-modal-scroll">
@@ -812,6 +801,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
   </div>
 </div>
 
+<!-- Lightbox -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
   <img id="lightbox-img" src="" alt="">
@@ -831,7 +821,22 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
      58 ولاية — تستعمل فالقائمة المنسدلة
      ========================================================= */
   const WILAYAS = [
-    {code:1,name:"أدرار"},{code:2,name:"الشلف"},{code:3,name:"الأغواط"},{code:4,name:"أم البواقي"},\n    {code:5,name:"باتنة"},{code:6,name:"بجاية"},{code:7,name:"بسكرة"},{code:8,name:"بشار"},\n    {code:9,name:"البليدة"},{code:10,name:"البويرة"},{code:11,name:"تمنراست"},{code:12,name:"تبسة"},\n    {code:13,name:"تلمسان"},{code:14,name:"تيارت"},{code:15,name:"تيزي وزو"},{code:16,name:"الجزائر"},\n    {code:17,name:"الجلفة"},{code:18,name:"جيجل"},{code:19,name:"سطيف"},{code:20,name:"سعيدة"},\n    {code:21,name:"سكيكدة"},{code:22,name:"سيدي بلعباس"},{code:23,name:"عنابة"},{code:24,name:"قالمة"},\n    {code:25,name:"قسنطينة"},{code:26,name:"المدية"},{code:27,name:"مستغانم"},{code:28,name:"المسيلة"},\n    {code:29,name:"معسكر"},{code:30,name:"ورقلة"},{code:31,name:"وهران"},{code:32,name:"البيض"},\n    {code:33,name:"إليزي"},{code:34,name:"برج بوعريريج"},{code:35,name:"بومرداس"},{code:36,name:"الطارف"},\n    {code:37,name:"تيندوف"},{code:38,name:"تيسمسيلت"},{code:39,name:"الوادي"},{code:40,name:"خنشلة"},\n    {code:41,name:"سوق أهراس"},{code:42,name:"تيبازة"},{code:43,name:"ميلة"},{code:44,name:"عين الدفلى"},\n    {code:45,name:"النعامة"},{code:46,name:"عين تموشنت"},{code:47,name:"غرداية"},{code:48,name:"غليزان"},\n    {code:49,name:"تيميمون"},{code:50,name:"برج باجي مختار"},{code:51,name:"أولاد جلال"},{code:52,name:"بني عباس"},\n    {code:53,name:"عين صالح"},{code:54,name:"عين قزام"},{code:55,name:"تقرت"},{code:56,name:"جانت"},\n    {code:57,name:"المغير"},{code:58,name:"المنيعة"}\n  ];
+    {code:1,name:"أدرار"},{code:2,name:"الشلف"},{code:3,name:"الأغواط"},{code:4,name:"أم البواقي"},
+    {code:5,name:"باتنة"},{code:6,name:"بجاية"},{code:7,name:"بسكرة"},{code:8,name:"بشار"},
+    {code:9,name:"البليدة"},{code:10,name:"البويرة"},{code:11,name:"تمنراست"},{code:12,name:"تبسة"},
+    {code:13,name:"تلمسان"},{code:14,name:"تيارت"},{code:15,name:"تيزي وزو"},{code:16,name:"الجزائر"},
+    {code:17,name:"الجلفة"},{code:18,name:"جيجل"},{code:19,name:"سطيف"},{code:20,name:"سعيدة"},
+    {code:21,name:"سكيكدة"},{code:22,name:"سيدي بلعباس"},{code:23,name:"عنابة"},{code:24,name:"قالمة"},
+    {code:25,name:"قسنطينة"},{code:26,name:"المدية"},{code:27,name:"مستغانم"},{code:28,name:"المسيلة"},
+    {code:29,name:"معسكر"},{code:30,name:"ورقلة"},{code:31,name:"وهران"},{code:32,name:"البيض"},
+    {code:33,name:"إليزي"},{code:34,name:"برج بوعريريج"},{code:35,name:"بومرداس"},{code:36,name:"الطارف"},
+    {code:37,name:"تيندوف"},{code:38,name:"تيسمسيلت"},{code:39,name:"الوادي"},{code:40,name:"خنشلة"},
+    {code:41,name:"سوق أهراس"},{code:42,name:"تيبازة"},{code:43,name:"ميلة"},{code:44,name:"عين الدفلى"},
+    {code:45,name:"النعامة"},{code:46,name:"عين تموشنت"},{code:47,name:"غرداية"},{code:48,name:"غليزان"},
+    {code:49,name:"تيميمون"},{code:50,name:"برج باجي مختار"},{code:51,name:"أولاد جلال"},{code:52,name:"بني عباس"},
+    {code:53,name:"عين صالح"},{code:54,name:"عين قزام"},{code:55,name:"تقرت"},{code:56,name:"جانت"},
+    {code:57,name:"المغير"},{code:58,name:"المنيعة"}
+  ];
 
   /* قائمة سعر التوصيل العادية (سوقلي) — office/home بالدج */
   const SOUK_PRICES = {
@@ -1121,13 +1126,6 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       });
 
       if(res.ok){
-        // 🌟 إرسال حدث الشراء للفيسبوك بيكسل وتتبع القيمة المالية تلقائياً
-        if(typeof fbq !== 'undefined') {
-          fbq('track', 'Purchase', {
-            value: total,
-            currency: 'DZD'
-          });
-        }
         closeModal();
         showSuccessOverlay();
       }else{
