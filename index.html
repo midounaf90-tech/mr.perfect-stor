@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -36,10 +35,10 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     --ink:#0C1A2B;
     --good:#3FA66A;
   }
- 
+
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
- 
+
   body{
     font-family:'Tajawal', sans-serif;
     background:var(--paper);
@@ -47,9 +46,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     line-height:1.6;
     font-size:16px;
   }
- 
+
   .mono{font-family:'JetBrains Mono', monospace;}
- 
+
   /* ===== HEADER ===== */
   header{
     background:var(--navy);
@@ -63,7 +62,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     z-index:50;
     border-bottom:3px solid var(--yellow);
   }
- 
+
   .logo{
     font-weight:900;
     font-size:1.35rem;
@@ -72,7 +71,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     align-items:center;
     gap:8px;
   }
- 
+
   .logo .dot{
     width:10px;height:10px;
     background:var(--yellow);
@@ -80,7 +79,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     display:inline-block;
     transform:rotate(45deg);
   }
- 
+
   .tagline-mono{
     font-family:'JetBrains Mono', monospace;
     font-size:.65rem;
@@ -88,7 +87,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     opacity:.85;
     letter-spacing:2px;
   }
- 
+
   /* ===== HERO ===== */
   .hero{
     background:linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 60%, var(--steel) 100%);
@@ -97,7 +96,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     position:relative;
     overflow:hidden;
   }
- 
+
   .hero::before{
     content:"";
     position:absolute;
@@ -106,13 +105,13 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       repeating-linear-gradient(45deg, transparent, transparent 28px, rgba(255,201,60,.05) 28px, rgba(255,201,60,.05) 30px);
     pointer-events:none;
   }
- 
+
   .hero-inner{
     position:relative;
     z-index:2;
     max-width:100%;
   }
- 
+
   .hero-eyebrow{
     font-family:'JetBrains Mono', monospace;
     color:var(--yellow);
@@ -124,23 +123,23 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     padding:4px 12px;
     border-radius:999px;
   }
- 
+
   .hero h1{
     font-size:1.85rem;
     font-weight:900;
     line-height:1.2;
     margin-bottom:12px;
   }
- 
+
   .hero h1 span{color:var(--yellow);}
- 
+
   .hero p{
     font-size:.95rem;
     color:#C9D3E0;
     margin-bottom:22px;
     line-height:1.65;
   }
- 
+
   .hero-cta{
     display:flex;
     align-items:center;
@@ -160,9 +159,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     -webkit-tap-highlight-color:transparent;
     active:opacity:.85;
   }
- 
+
   .hero-cta:active{opacity:.85;}
- 
+
   /* ===== SECTION HEADER ===== */
   .section-head{
     display:flex;
@@ -172,20 +171,20 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     flex-wrap:wrap;
     gap:6px;
   }
- 
+
   .section-head h2{
     font-size:1.45rem;
     font-weight:900;
     color:var(--navy);
   }
- 
+
   .section-head .count{
     font-family:'JetBrains Mono', monospace;
     font-size:.8rem;
     color:var(--steel);
     letter-spacing:1px;
   }
- 
+
   /* ===== PRODUCT GRID ===== */
   .grid{
     display:grid;
@@ -193,7 +192,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     gap:12px;
     padding:0 4% 70px;
   }
- 
+
   .card{
     background:#fff;
     border:1px solid #E2DCCB;
@@ -203,9 +202,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     flex-direction:column;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .card:active{transform:scale(.98);}
- 
+
   .card-img{
     aspect-ratio:1/1;
     background:#EFEAE0;
@@ -215,16 +214,16 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     overflow:hidden;
     position:relative;
   }
- 
+
   .card-img img{
     width:100%;height:100%;object-fit:cover;
   }
- 
+
   .card-img .ph{
     font-size:2rem;
     color:var(--steel);
   }
- 
+
   .card-body{
     padding:11px 12px 13px;
     display:flex;
@@ -232,14 +231,14 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     flex:1;
     gap:8px;
   }
- 
+
   .card-body h3{
     font-size:.92rem;
     font-weight:700;
     color:var(--navy);
     line-height:1.3;
   }
- 
+
   .card-body p{
     font-size:.78rem;
     color:#6b7280;
@@ -249,7 +248,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     -webkit-box-orient:vertical;
     overflow:hidden;
   }
- 
+
   .price-row{
     display:flex;
     align-items:center;
@@ -257,20 +256,20 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     margin-top:auto;
     gap:6px;
   }
- 
+
   .price{
     font-family:'JetBrains Mono', monospace;
     font-weight:700;
     font-size:1rem;
     color:var(--navy);
   }
- 
+
   .price::after{
     content:" دج";
     font-size:.68rem;
     color:var(--steel);
   }
- 
+
   .order-btn{
     background:var(--navy);
     color:var(--yellow);
@@ -284,9 +283,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     white-space:nowrap;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .order-btn:active{background:var(--steel);}
- 
+
   .info-btn{
     background:transparent;
     color:var(--steel);
@@ -302,9 +301,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     width:100%;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .info-btn:active{border-color:var(--steel); color:var(--navy); background:#F4F1E9;}
- 
+
   /* ===== INFO MODAL — bottom sheet on mobile ===== */
   .info-modal{
     width:100%;
@@ -317,21 +316,21 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     flex-direction:column;
     margin-top:auto;
   }
- 
+
   .info-modal-scroll{
     flex:1;
     overflow-y:auto;
     padding:22px 18px 0;
     -webkit-overflow-scrolling:touch;
   }
- 
+
   .info-modal-scroll h2{
     font-size:1.25rem;
     font-weight:900;
     color:var(--navy);
     margin-bottom:6px;
   }
- 
+
   .info-modal-price{
     font-family:'JetBrains Mono', monospace;
     font-weight:700;
@@ -339,13 +338,13 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     color:var(--navy);
     margin-bottom:14px;
   }
- 
+
   .info-modal-price::after{
     content:" دج";
     font-size:.8rem;
     color:var(--steel);
   }
- 
+
   .info-modal-desc{
     font-size:.92rem;
     color:#4b5563;
@@ -353,21 +352,21 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     margin-bottom:18px;
     white-space:pre-line;
   }
- 
+
   .info-modal-imgs{
     display:flex;
     flex-direction:column;
     gap:12px;
     margin-bottom:22px;
   }
- 
+
   .info-modal-imgs img{
     width:100%;
     border-radius:10px;
     object-fit:cover;
     display:block;
   }
- 
+
   .info-footer{
     padding:14px 18px;
     border-top:1px solid #E2DCCB;
@@ -376,7 +375,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     background:#fff;
     padding-bottom:env(safe-area-inset-bottom, 14px);
   }
- 
+
   .info-close{
     background:none;
     border:1.5px solid #DDD6C5;
@@ -389,9 +388,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-size:1rem;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .info-close:active{background:#F4F1E9;}
- 
+
   .info-order-btn{
     flex:1;
     background:var(--navy);
@@ -405,9 +404,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-family:'Tajawal',sans-serif;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .info-order-btn:active{background:var(--steel);}
- 
+
   .empty-state{
     padding:60px 5%;
     text-align:center;
@@ -415,58 +414,59 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-family:'JetBrains Mono', monospace;
     grid-column:1/-1;
   }
- 
-  /* ===== ORDER MODAL — bottom sheet ===== */
+
+  /* ===== ORDER MODAL — centered ===== */
   .overlay{
     position:fixed;
     inset:0;
     background:rgba(12,26,43,.6);
     backdrop-filter:blur(3px);
     display:none;
-    align-items:flex-end;
+    align-items:center;
     justify-content:center;
     z-index:100;
+    padding:16px;
   }
- 
+
   .overlay.active{display:flex;}
- 
+
   .modal{
     background:#fff;
-    border-radius:20px 20px 0 0;
+    border-radius:16px;
     width:100%;
+    max-width:440px;
     max-height:92vh;
     overflow-y:auto;
     -webkit-overflow-scrolling:touch;
-    padding:22px 18px;
-    padding-bottom:calc(18px + env(safe-area-inset-bottom, 0px));
+    padding:24px 20px;
     position:relative;
     border-top:5px solid var(--yellow);
-    animation:slideUp .25s ease;
+    animation:pop .22s ease;
   }
- 
+
   @keyframes slideUp{
     from{transform:translateY(100%);}
     to{transform:translateY(0);}
   }
- 
+
   @keyframes pop{
-    from{opacity:0; transform:scale(.97);}
-    to{opacity:1; transform:scale(1);}
+    from{opacity:0; transform:translateY(12px) scale(.97);}
+    to{opacity:1; transform:translateY(0) scale(1);}
   }
- 
+
   .modal h3{
     color:var(--navy);
     font-size:1.2rem;
     margin-bottom:4px;
   }
- 
+
   .modal .sub{
     font-family:'JetBrains Mono', monospace;
     font-size:.78rem;
     color:var(--steel);
     margin-bottom:16px;
   }
- 
+
   .modal label{
     display:block;
     font-size:.88rem;
@@ -475,7 +475,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     margin-bottom:6px;
     margin-top:14px;
   }
- 
+
   .modal input{
     width:100%;
     padding:14px;
@@ -485,19 +485,19 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-size:1rem;
     background:var(--paper);
   }
- 
+
   .modal input:focus{
     outline:none;
     border-color:var(--yellow);
     background:#fff;
   }
- 
+
   .modal-actions{
     display:flex;
     gap:10px;
     margin-top:22px;
   }
- 
+
   .btn-primary, .btn-ghost{
     flex:1;
     padding:15px;
@@ -509,14 +509,14 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-family:'Tajawal',sans-serif;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .btn-primary{background:var(--navy); color:var(--yellow);}
   .btn-primary:active{background:var(--steel);}
   .btn-primary:disabled{opacity:.5; cursor:not-allowed;}
- 
+
   .btn-ghost{background:transparent; color:var(--steel); border:1.5px solid #DDD6C5;}
   .btn-ghost:active{background:#F4F1E9;}
- 
+
   .close-x{
     position:absolute;
     top:14px; left:14px;
@@ -533,17 +533,17 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     line-height:1;
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .status-msg{
     margin-top:12px;
     font-size:.85rem;
     text-align:center;
     font-family:'JetBrains Mono', monospace;
   }
- 
+
   .status-msg.ok{color:var(--good);}
   .status-msg.err{color:#D14343;}
- 
+
   .field-err{
     display:none;
     color:#D14343;
@@ -551,7 +551,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     margin-top:5px;
     font-weight:700;
   }
- 
+
   /* ===== WILAYA / DELIVERY ===== */
   .modal select{
     width:100%;
@@ -569,19 +569,19 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     background-position:left 12px center;
     background-size:16px;
   }
- 
+
   .modal select:focus{
     outline:none;
     border-color:var(--yellow);
     background-color:#fff;
   }
- 
+
   .delivery-cards{
     display:flex;
     gap:10px;
     margin-top:6px;
   }
- 
+
   .delivery-card{
     flex:1;
     border:1.5px solid #DDD6C5;
@@ -596,22 +596,22 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     background:var(--paper);
     -webkit-tap-highlight-color:transparent;
   }
- 
+
   .delivery-card.selected{
     border-color:var(--yellow);
     background:#FFF6DC;
     box-shadow:inset 0 0 0 1px var(--yellow);
   }
- 
+
   .dc-title{font-size:.85rem; font-weight:700; color:var(--navy);}
   .dc-price{font-family:'JetBrains Mono', monospace; font-size:1.05rem; font-weight:700; color:var(--navy);}
- 
+
   .price-summary{
     margin-top:16px;
     border-top:1.5px dashed #DDD6C5;
     padding-top:12px;
   }
- 
+
   .ps-row{
     display:flex;
     justify-content:space-between;
@@ -619,7 +619,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     color:var(--steel);
     padding:5px 0;
   }
- 
+
   .ps-row.ps-total{
     border-top:1px solid #DDD6C5;
     margin-top:6px;
@@ -628,7 +628,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     color:var(--navy);
     font-size:1.1rem;
   }
- 
+
   .success-modal{
     text-align:center;
     padding:32px 22px;
@@ -637,7 +637,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     border-radius:20px 20px 0 0;
     animation:slideUp .25s ease;
   }
- 
+
   .success-icon{
     width:68px;height:68px;
     background:var(--good);
@@ -651,18 +651,18 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     margin:0 auto 16px;
     animation:pop .3s ease;
   }
- 
+
   .success-modal h3{
     color:var(--navy);
     font-size:1.3rem;
     margin-bottom:8px;
   }
- 
+
   .success-modal p{
     color:var(--steel);
     font-size:.93rem;
   }
- 
+
   /* ===== LIGHTBOX ===== */
   .lightbox{
     position:fixed;
@@ -675,9 +675,9 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     padding:16px;
     cursor:zoom-out;
   }
- 
+
   .lightbox.active{display:flex;}
- 
+
   .lightbox img{
     max-width:100%;
     max-height:88vh;
@@ -685,7 +685,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     object-fit:contain;
     animation:pop .2s ease;
   }
- 
+
   .lightbox-close{
     position:absolute;
     top:16px;
@@ -702,13 +702,13 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     justify-content:center;
     line-height:1;
   }
- 
+
   .lightbox-close:active{background:rgba(255,255,255,.3);}
- 
+
   .info-modal-imgs img{
     cursor:zoom-in;
   }
- 
+
   /* ===== FOOTER ===== */
   footer{
     background:var(--navy);
@@ -719,17 +719,17 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     font-family:'JetBrains Mono', monospace;
     border-top:3px solid var(--yellow);
   }
- 
+
   footer .dot{color:var(--yellow);}
 </style>
 </head>
 <body>
- 
+
 <header>
   <div class="logo"><span class="dot"></span> :Mr.perfect</div>
   <div class="tagline-mono">مرحبا بكم</div>
 </header>
- 
+
 <section class="hero">
   <div class="hero-inner">
     <span class="hero-eyebrow">QUALITY · PRICES · DELIVERY</span>
@@ -740,35 +740,35 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     </button>
   </div>
 </section>
- 
+
 <div class="section-head" id="products">
   <h2>المنتجات</h2>
   <span class="count mono" id="prod-count">...</span>
 </div>
- 
+
 <div class="grid" id="grid">
   <div class="empty-state">جاري تحميل المنتجات...</div>
 </div>
- 
+
 <!-- Order Modal -->
 <div class="overlay" id="overlay">
   <div class="modal">
     <button class="close-x" onclick="closeModal()">✕</button>
     <h3 id="modal-product-name">طلب المنتج</h3>
     <div class="sub" id="modal-product-price">السعر: -- دج</div>
- 
+
     <label>الاسم الكامل</label>
     <input type="text" id="f-name" oninput="checkFormValidity()" placeholder="مثال: محمد نفير">
- 
+
     <label>رقم الهاتف</label>
     <input type="tel" id="f-phone" oninput="validatePhone()" placeholder="0X XX XX XX XX">
     <div class="field-err" id="phone-err">الرقم خاطئ، خاص يكون 10 أرقام</div>
- 
+
     <label>الولاية</label>
     <select id="f-wilaya" onchange="onWilayaChange()">
       <option value="">اختر الولاية...</option>
     </select>
- 
+
     <div id="delivery-options" style="display:none;">
       <label>طريقة التوصيل</label>
       <div class="delivery-cards">
@@ -782,29 +782,29 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
         </div>
       </div>
     </div>
- 
+
     <div class="status-msg err" id="unavailable-msg" style="display:none;">عذراً، التوصيل غير متوفر لهذه الولاية حالياً</div>
- 
+
     <div id="address-wrap" style="display:none;">
       <label>العنوان (الحي / الشارع)</label>
       <input type="text" id="f-address" oninput="checkFormValidity()" placeholder="مثال: حي النصر، شارع...">
     </div>
- 
+
     <div class="price-summary" id="price-summary" style="display:none;">
       <div class="ps-row"><span>سعر المنتج</span><span class="mono" id="ps-product">-- دج</span></div>
       <div class="ps-row"><span>سعر التوصيل</span><span class="mono" id="ps-delivery">-- دج</span></div>
       <div class="ps-row ps-total"><span>الإجمالي</span><span class="mono" id="ps-total">-- دج</span></div>
     </div>
- 
+
     <div class="modal-actions">
       <button class="btn-ghost" onclick="closeModal()">إلغاء</button>
       <button class="btn-primary" id="submit-btn" onclick="submitOrder()" disabled>تأكيد الطلب</button>
     </div>
- 
+
     <div class="status-msg" id="status-msg"></div>
   </div>
 </div>
- 
+
 <!-- Success Overlay -->
 <div class="overlay" id="success-overlay">
   <div class="modal success-modal">
@@ -813,7 +813,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     <p>نتصلو بيك قريباً لتأكيد الطلبية</p>
   </div>
 </div>
- 
+
 <!-- Info Modal -->
 <div class="overlay" id="info-overlay">
   <div class="modal info-modal">
@@ -829,23 +829,23 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     </div>
   </div>
 </div>
- 
+
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()">✕</button>
   <img id="lightbox-img" src="" alt="">
 </div>
- 
+
 <footer>
   NEEDS <span class="dot">●</span> Constantine, Algeria <span class="dot">●</span> جميع الحقوق محفوظة
 </footer>
- 
+
 <script>
   /* =========================================================
      CONFIG — عدّل هذا الرابط فقط بعد إنشاء حساب SheetDB
      ========================================================= */
   const SHEETDB_API = "https://sheetdb.io/api/v1/9jjeye7lrsnri";
- 
+
   /* =========================================================
      58 ولاية — تستعمل فالقائمة المنسدلة
      ========================================================= */
@@ -866,7 +866,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     {code:53,name:"عين صالح"},{code:54,name:"عين قزام"},{code:55,name:"تقرت"},{code:56,name:"جانت"},
     {code:57,name:"المغير"},{code:58,name:"المنيعة"}
   ];
- 
+
   /* قائمة سعر التوصيل العادية (سوقلي) — office/home بالدج */
   const SOUK_PRICES = {
     1:{office:600,home:1000}, 2:{office:350,home:600}, 3:{office:500,home:750}, 4:{office:400,home:700},
@@ -885,7 +885,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     53:{office:700,home:1200}, 54:null, 55:{office:500,home:850}, 56:null,
     57:{office:900,home:900}, 58:{office:600,home:900}
   };
- 
+
   /* قائمة سعر التوصيل الثانية (baba) — office/home بالدج */
   const BABA_PRICES = {
     1:{office:800,home:1000}, 2:{office:600,home:700}, 3:{office:700,home:850}, 4:{office:600,home:700},
@@ -904,19 +904,19 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     53:{office:1300,home:1500}, 54:{office:1300,home:1500}, 55:{office:700,home:850}, 56:{office:1300,home:1500},
     57:{office:700,home:850}, 58:{office:700,home:850}
   };
- 
+
   let allProducts = [];
   let currentProduct = null;
   let selectedWilaya = null;
   let selectedDelivery = null;     // 'office' | 'home'
   let currentDeliveryPrices = null; // {office, home} للمنتج الحالي + الولاية المختارة
- 
+
   function populateWilayaSelect(){
     const sel = document.getElementById('f-wilaya');
     sel.innerHTML = '<option value="">اختر الولاية...</option>' +
       WILAYAS.map(w => `<option value="${w.code}">${String(w.code).padStart(2,'0')} - ${w.name}</option>`).join('');
   }
- 
+
   // يحدد أي قائمة أسعار تستعمل بالاعتماد على خانة express فالمنتج (مخفية على الزبون)
   function getExpressType(p){
     const ex = (p.express || '').toString().trim().toLowerCase();
@@ -924,11 +924,11 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     if(ex.includes('مجاني')) return 'free';
     return 'souk';
   }
- 
+
   function getDeliveryPrices(expressType, wilayaCode){
     const souk = SOUK_PRICES[wilayaCode];
     const baba = BABA_PRICES[wilayaCode];
- 
+
     if(expressType === 'free'){
       if(!souk) return null;
       return { office: 0, home: souk.home - souk.office };
@@ -940,23 +940,23 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     if(!souk) return null;
     return { office: souk.office, home: souk.home };
   }
- 
+
   // ====== Load products from Google Sheet (tab "Products") ======
   async function loadProducts(){
     const grid = document.getElementById('grid');
     try{
       const res = await fetch(`${SHEETDB_API}?sheet=Products`);
       const data = await res.json();
- 
+
       if(!Array.isArray(data) || data.length === 0){
         grid.innerHTML = `<div class="empty-state">لا توجد منتجات حالياً</div>`;
         document.getElementById('prod-count').textContent = "0 منتج";
         return;
       }
- 
+
       allProducts = data;
       document.getElementById('prod-count').textContent = `${data.length} منتج`;
- 
+
       grid.innerHTML = data.map((p, idx) => `
         <div class="card">
           <div class="card-img">
@@ -973,42 +973,42 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
           </div>
         </div>
       `).join('');
- 
+
     }catch(err){
       grid.innerHTML = `<div class="empty-state">تعذر تحميل المنتجات. تحقق من رابط SheetDB.</div>`;
       console.error(err);
     }
   }
- 
+
   function openModal(idx){
     currentProduct = allProducts[idx];
     selectedWilaya = null;
     selectedDelivery = null;
     currentDeliveryPrices = null;
- 
+
     document.getElementById('modal-product-name').textContent = currentProduct.name;
     document.getElementById('modal-product-price').textContent = `السعر: ${currentProduct.price} دج`;
- 
+
     document.getElementById('f-name').value = '';
     document.getElementById('f-phone').value = '';
     document.getElementById('f-address').value = '';
     document.getElementById('phone-err').style.display = 'none';
- 
+
     populateWilayaSelect();
     document.getElementById('f-wilaya').value = '';
- 
+
     document.getElementById('delivery-options').style.display = 'none';
     document.getElementById('unavailable-msg').style.display = 'none';
     document.getElementById('address-wrap').style.display = 'none';
     document.getElementById('price-summary').style.display = 'none';
     resetDeliveryCards();
- 
+
     document.getElementById('status-msg').textContent = '';
     document.getElementById('status-msg').className = 'status-msg';
     document.getElementById('submit-btn').disabled = true;
- 
+
     document.getElementById('overlay').classList.add('active');
- 
+
     // Meta Pixel — InitiateCheckout
     fbq('track', 'InitiateCheckout', {
       content_name: currentProduct.name,
@@ -1016,16 +1016,16 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       currency: 'DZD'
     });
   }
- 
+
   function closeModal(){
     document.getElementById('overlay').classList.remove('active');
   }
- 
+
   function resetDeliveryCards(){
     document.getElementById('dc-office').classList.remove('selected');
     document.getElementById('dc-home').classList.remove('selected');
   }
- 
+
   function onWilayaChange(){
     const code = parseInt(document.getElementById('f-wilaya').value, 10);
     selectedDelivery = null;
@@ -1034,31 +1034,31 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     document.getElementById('address-wrap').style.display = 'none';
     document.getElementById('price-summary').style.display = 'none';
     document.getElementById('submit-btn').disabled = true;
- 
+
     if(!code){
       selectedWilaya = null;
       document.getElementById('delivery-options').style.display = 'none';
       document.getElementById('unavailable-msg').style.display = 'none';
       return;
     }
- 
+
     selectedWilaya = code;
     const expressType = getExpressType(currentProduct);
     const prices = getDeliveryPrices(expressType, code);
- 
+
     if(!prices){
       document.getElementById('delivery-options').style.display = 'none';
       document.getElementById('unavailable-msg').style.display = 'block';
       return;
     }
- 
+
     currentDeliveryPrices = prices;
     document.getElementById('unavailable-msg').style.display = 'none';
     document.getElementById('delivery-options').style.display = 'block';
     document.getElementById('dc-office-price').textContent = `${prices.office} دج`;
     document.getElementById('dc-home-price').textContent = `${prices.home} دج`;
   }
- 
+
   function selectDelivery(type){
     if(!currentDeliveryPrices) return;
     selectedDelivery = type;
@@ -1067,26 +1067,26 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     document.getElementById('address-wrap').style.display = (type === 'home') ? 'block' : 'none';
     updatePriceSummary();
   }
- 
+
   function updatePriceSummary(){
     if(!currentDeliveryPrices || !selectedDelivery) return;
     const deliveryPrice = currentDeliveryPrices[selectedDelivery];
     const productPrice = parseFloat(currentProduct.price) || 0;
     const total = productPrice + deliveryPrice;
- 
+
     document.getElementById('ps-product').textContent = `${productPrice} دج`;
     document.getElementById('ps-delivery').textContent = `${deliveryPrice} دج`;
     document.getElementById('ps-total').textContent = `${total} دج`;
     document.getElementById('price-summary').style.display = 'block';
- 
+
     checkFormValidity();
   }
- 
+
   function isPhoneValid(phone){
     const digits = phone.replace(/[^0-9]/g, '');
     return digits.length === 10;
   }
- 
+
   function validatePhone(){
     const phone = document.getElementById('f-phone').value.trim();
     const errEl = document.getElementById('phone-err');
@@ -1097,19 +1097,19 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     }
     checkFormValidity();
   }
- 
+
   function checkFormValidity(){
     const name = document.getElementById('f-name').value.trim();
     const phone = document.getElementById('f-phone').value.trim();
     const address = document.getElementById('f-address').value.trim();
     const btn = document.getElementById('submit-btn');
- 
+
     let valid = !!(name && isPhoneValid(phone) && selectedWilaya && selectedDelivery && currentDeliveryPrices);
     if(selectedDelivery === 'home' && !address) valid = false;
- 
+
     btn.disabled = !valid;
   }
- 
+
   // ====== Submit order to Google Sheet (tab "Orders") ======
   async function submitOrder(){
     const name = document.getElementById('f-name').value.trim();
@@ -1117,7 +1117,7 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
     const address = document.getElementById('f-address').value.trim();
     const statusEl = document.getElementById('status-msg');
     const btn = document.getElementById('submit-btn');
- 
+
     if(!name || !phone || !selectedWilaya || !selectedDelivery || !currentDeliveryPrices){
       statusEl.textContent = "عمر جميع الخانات من فضلك";
       statusEl.className = "status-msg err";
@@ -1134,15 +1134,15 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       statusEl.className = "status-msg err";
       return;
     }
- 
+
     const wilayaObj = WILAYAS.find(w => w.code === selectedWilaya);
     const deliveryPrice = currentDeliveryPrices[selectedDelivery];
     const productPrice = parseFloat(currentProduct.price) || 0;
     const total = productPrice + deliveryPrice;
- 
+
     btn.disabled = true;
     btn.textContent = "جاري الإرسال...";
- 
+
     // مفاتيح الـ JSON لازم تطابق أسماء الأعمدة بالضبط فـ Google Sheet (تبويب Orders)
     const order = {
       name: name,
@@ -1153,14 +1153,14 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       "نوع التوصيل": selectedDelivery === 'office' ? 'مكتب' : 'منزل',
       "السعر الاجمالي": total
     };
- 
+
     try{
       const res = await fetch(`${SHEETDB_API}?sheet=Orders`, {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({ data: [order] })
       });
- 
+
       if(res.ok){
         // Meta Pixel — Purchase
         fbq('track', 'Purchase', {
@@ -1181,82 +1181,81 @@ src="https://www.facebook.com/tr?id=1273766987939925&ev=PageView&noscript=1"
       btn.textContent = "تأكيد الطلب";
     }
   }
- 
+
   function showSuccessOverlay(){
     const ov = document.getElementById('success-overlay');
     ov.classList.add('active');
     setTimeout(() => { ov.classList.remove('active'); }, 6000);
   }
- 
+
   // Close success overlay on outside click
   document.getElementById('success-overlay').addEventListener('click', (e) => {
     if(e.target.id === 'success-overlay') e.currentTarget.classList.remove('active');
   });
- 
+
   // Close modal on outside click
   document.getElementById('overlay').addEventListener('click', (e) => {
     if(e.target.id === 'overlay') closeModal();
   });
- 
+
   // ====== Info Modal ======
   let infoProductIdx = null;
- 
+
   function openInfo(idx){
     infoProductIdx = idx;
     const p = allProducts[idx];
- 
+
     document.getElementById('info-name').textContent = p.name;
     document.getElementById('info-price').textContent = p.price;
- 
+
     // قراءة الوصف المفصل — نجرب أسماء مختلفة باش نضمن
     const detailedDesc = p['وصف مفصل'] || p['وصف_مفصل'] || p['وصف مفصل '] || '';
     document.getElementById('info-desc').textContent = (detailedDesc || p.description || '').replace(/[\r\n]+/g, '\n').trim();
- 
+
     // الصور — صورة1 إذا فارغة يستعمل image
     const imgs = [
       p['صورة1'] || p.image,
       p['صورة2'],
       p['صورة3']
     ].filter(src => src && src.trim());
- 
+
     const imgsEl = document.getElementById('info-imgs');
     imgsEl.innerHTML = imgs.map(src =>
       `<img src="${src}" alt="${p.name}" onclick="openLightbox('${src}')" onerror="this.style.display='none'">`
     ).join('');
- 
+
     document.getElementById('info-overlay').classList.add('active');
   }
- 
+
   function closeInfo(){
     document.getElementById('info-overlay').classList.remove('active');
   }
- 
+
   function openOrderFromInfo(){
     closeInfo();
     openModal(infoProductIdx);
   }
- 
+
   document.getElementById('info-overlay').addEventListener('click', (e) => {
     if(e.target.id === 'info-overlay') closeInfo();
   });
- 
+
   // ====== Lightbox ======
   function openLightbox(src){
     document.getElementById('lightbox-img').src = src;
     document.getElementById('lightbox').classList.add('active');
   }
- 
+
   function closeLightbox(){
     document.getElementById('lightbox').classList.remove('active');
   }
- 
+
   document.addEventListener('keydown', (e) => {
     if(e.key === 'Escape') closeLightbox();
   });
- 
+
   loadProducts();
 </script>
- 
+
 </body>
 </html>
- 
